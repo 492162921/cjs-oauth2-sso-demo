@@ -1,0 +1,14 @@
+server:
+  port: 8085
+  servlet:
+    context-path: /goodsSystem
+security:
+  oauth2:
+    client:
+      client-id: GoodsManagement
+      client-secret: order123
+      access-token-uri: http://localhost:8080/oauth/token
+      user-authorization-uri: http://localhost:8080/oauth/authorize
+    resource:
+      jwt:
+        key-uri: http://localhost:8080/oauth/token_key
